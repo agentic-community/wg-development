@@ -48,7 +48,7 @@ Meta-Everything Agent is an AI system that embodies a "meta-everything" philosop
 - Process templates (sequential, hierarchical, custom)
 - Human-in-the-loop capabilities
 
-## Architecture Comparison
+## Architecture
 
 ```mermaid
 graph TB
@@ -73,10 +73,10 @@ graph TB
     MA --> C
 
     style M fill:#1976d2,color:#fff
-    style S fill:#4fc3f7,color:#000
-    style L fill:#ff9800,color:#fff
-    style A fill:#66bb6a,color:#fff
-    style C fill:#5c6bc0,color:#fff
+    style MA fill:#388e3c,color:#fff
+    style MT fill:#f57c00,color:#fff
+    style ML fill:#7b1fa2,color:#fff
+    style MC fill:#d32f2f,color:#fff
 ```
 
 ## Key Differentiators

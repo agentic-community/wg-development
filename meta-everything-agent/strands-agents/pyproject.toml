@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "meta-agent"
+version = "0.1.0"
+description = "A self-evolving AI system that adapts to any problem domain"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "MetaAgent Contributors"},
+]
+requires-python = ">=3.10"
+dependencies = [
+    "strands-agents==0.1.6",
+    "strands-agents-tools @ git+https://github.com/cagataycali/tools.git@feat/model-switch-clean",
+    "mem0ai",
+    "faiss-cpu",
+    "boto3",
+    "opensearch-py",
+    "rich>=13.7.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=22.0.0",
+    "isort>=5.0.0",
+    "flake8>=4.0.0",
+    "mypy>=0.990",
+]
+
+[project.scripts]
+meta-agent = "src.main:main"
+
+[tool.setuptools]
+packages = ["src"]
+
+[tool.black]
+line-length = 120
+target-version = ["py310", "py311", "py312"]
+
+[tool.isort]
+profile = "black"
+line_length = 120
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"

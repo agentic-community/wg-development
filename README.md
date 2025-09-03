@@ -128,11 +128,11 @@ graph TB
 
 ```bash
 # Clone the repository
-git clone https://github.com/sriaradhyula/agentic-community-meta-agent.git
-cd agentic-community-meta-agent
+git clone https://github.com/agentic-community/wg-development.git
+cd wg-development/meta-everything-agent
 
 # Choose an implementation
-cd strands-agents  # or langgraph, adk, crewai
+cd strands-agents  # or langgraph, adk, crew-ai
 
 # Follow framework-specific setup instructions
 ```
@@ -169,14 +169,14 @@ Meta-Everything Agent analyzes its own performance and adjusts strategies based 
 agentic-community-meta-agent/
 ├── README.md                 # This file
 ├── LICENSE                   # MIT License
-├── strands-agents/          # Strands SDK implementation
-│   └── MetaEverythingAgent/
+├── meta-everything-agent/
+│   └── adk/                 # ADK implementation (coming soon)
+│   └── crew-ai/             # Crew AI implementation (coming soon)
+│   └── langgraph/           # LangGraph implementation (coming soon)
+│   └── strands-agents/      # Strands SDK implementation
 │       ├── src/
 │       ├── pyproject.toml
 │       └── README.md
-├── langgraph/               # LangGraph implementation (coming soon)
-├── adk/                     # ADK implementation (coming soon)
-└── crewai/                  # CrewAI implementation (coming soon)
 ```
 
 ## Contributing

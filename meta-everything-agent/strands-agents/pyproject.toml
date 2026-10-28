@@ -13,7 +13,7 @@ authors = [
 ]
 requires-python = ">=3.10"
 dependencies = [
-    "strands-agents==0.1.6",
+    "strands-agents==1.48.0",
     "strands-agents-tools @ git+https://github.com/cagataycali/tools.git@feat/model-switch-clean",
     "mem0ai",
     "faiss-cpu",
